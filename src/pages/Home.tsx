@@ -1,4 +1,5 @@
 import { Code, Smartphone, Palette, Users } from "lucide-react";
+import SkillsSection from "@/components/SkillsSection";
 
 const Home = () => {
   const services = [
@@ -62,6 +63,9 @@ const Home = () => {
           })}
         </div>
       </div>
+
+      {/* Skills Section with Scroll Animation */}
+      <SkillsSection />
     </div>
   );
 };
