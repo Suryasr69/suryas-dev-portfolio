@@ -21,6 +21,11 @@ const SkillsSection = () => {
       color: "#F7DF1E",
     },
     {
+      name: "React",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      color: "#61DAFB",
+    },
+    {
       name: "Node.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       color: "#339933",
@@ -34,6 +39,11 @@ const SkillsSection = () => {
       name: "SQL",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
       color: "#4479A1",
+    },
+    {
+      name: "Netlify",
+      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+      color: "#00C7B7",
     },
   ];
 
