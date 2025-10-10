@@ -1,7 +1,31 @@
-import { Code, Smartphone, Palette, Users } from "lucide-react";
+import { Code, Smartphone, Palette, Users, Mail, Phone, Send } from "lucide-react";
 import SkillsSection from "@/components/SkillsSection";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
+import { toast } from "sonner";
 
 const Home = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Message sent successfully!");
+    setFormData({ name: "", email: "", message: "" });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const services = [
     {
       icon: Code,
@@ -66,6 +90,91 @@ const Home = () => {
 
       {/* Skills Section with Scroll Animation */}
       <SkillsSection />
+
+      {/* Contact Section */}
+      <div className="mt-16">
+        <h2 className="text-4xl font-bold mb-8">
+          Get In Touch
+          <div className="h-1 w-32 bg-gradient-to-r from-primary to-orange-600 mt-4 rounded-full"></div>
+        </h2>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Contact Info */}
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 dark:from-orange-950/20 dark:to-orange-900/10 p-6 rounded-2xl">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg">Phone</h3>
+                  <p className="text-muted-foreground">+91 9876543210</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 dark:from-orange-950/20 dark:to-orange-900/10 p-6 rounded-2xl">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg">Email</h3>
+                  <p className="text-muted-foreground">suryaprakash@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="bg-card p-6 rounded-2xl shadow-md">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <Input
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="h-12 rounded-xl border-2"
+                />
+              </div>
+
+              <div>
+                <Input
+                  name="email"
+                  type="email"
+                  placeholder="Your Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="h-12 rounded-xl border-2"
+                />
+              </div>
+
+              <div>
+                <Textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  className="rounded-xl border-2 resize-none"
+                />
+              </div>
+
+              <Button
+                type="submit"
+                className="w-full bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white rounded-xl h-12 font-medium shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <Send className="w-4 h-4 mr-2" />
+                Send Message
+              </Button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
