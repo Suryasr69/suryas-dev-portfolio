@@ -1,4 +1,6 @@
-import { GraduationCap, Briefcase } from "lucide-react";
+import { GraduationCap, Briefcase, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const Resume = () => {
   const education = [
@@ -48,12 +50,34 @@ const Resume = () => {
     "Writing",
   ];
 
+  const handleDownloadResume = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // You'll need to add your resume PDF to the public folder
+    link.download = 'Surya_Prakash_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    toast.success("Resume downloaded successfully!");
+  };
+
   return (
     <div className="animate-fade-in">
-      <h1 className="text-5xl font-bold mb-12">
-        Resume
-        <div className="h-1 w-32 bg-gradient-to-r from-primary to-orange-600 mt-4 rounded-full"></div>
-      </h1>
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-12">
+        <div>
+          <h1 className="text-5xl font-bold">
+            Resume
+            <div className="h-1 w-32 bg-gradient-to-r from-primary to-orange-600 mt-4 rounded-full"></div>
+          </h1>
+        </div>
+        <Button
+          onClick={handleDownloadResume}
+          className="bg-gradient-to-r from-primary to-orange-600 hover:from-orange-600 hover:to-primary text-white rounded-xl h-12 px-6 font-medium shadow-lg transition-all duration-300 hover:scale-105"
+        >
+          <Download className="w-4 h-4 mr-2" />
+          Download Resume
+        </Button>
+      </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
         {/* Education */}
