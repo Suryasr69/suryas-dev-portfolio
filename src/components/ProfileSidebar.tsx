@@ -6,8 +6,8 @@ const ProfileSidebar = () => {
   const handleDownloadCV = () => {
     // In a real app, this would download the actual CV
     const link = document.createElement('a');
-    link.href = '#';
-    link.download = 'Surya_Prakash_CV.pdf';
+    link.href = "suryaresume.pdf";
+    link.download = "suryaresume.pdf";
     link.click();
   };
 
@@ -29,13 +29,13 @@ const ProfileSidebar = () => {
         <h1 className="text-3xl font-bold mb-2">
           Surya <span className="text-primary">Prakash</span>
         </h1>
-        <p className="text-muted-foreground">Full Stack Developer</p>
+        <p className="text-muted-foreground">Mern Full Stack Developer</p>
       </div>
 
       {/* Social Links */}
       <div className="flex justify-center gap-4 mb-8">
         <a
-          href="https://facebook.com"
+          href="https://www.linkedin.com/in/surya6922/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -43,7 +43,7 @@ const ProfileSidebar = () => {
           <Facebook className="w-5 h-5" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/surya6922/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -59,7 +59,7 @@ const ProfileSidebar = () => {
           <Twitter className="w-5 h-5" />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/Suryasr69"
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
@@ -76,7 +76,7 @@ const ProfileSidebar = () => {
           </div>
           <div className="flex-1">
             <p className="text-sm text-muted-foreground mb-1">Phone</p>
-            <p className="font-medium">+91 9876543210</p>
+            <p className="font-medium">+91 6385808234</p>
           </div>
         </div>
 
@@ -86,7 +86,7 @@ const ProfileSidebar = () => {
           </div>
           <div className="flex-1">
             <p className="text-sm text-muted-foreground mb-1">Email</p>
-            <p className="font-medium text-sm break-all">suryaprakash@gmail.com</p>
+            <p className="font-medium text-sm break-all">srsurya778@gmail.com</p>
           </div>
         </div>
 
@@ -96,7 +96,7 @@ const ProfileSidebar = () => {
           </div>
           <div className="flex-1">
             <p className="text-sm text-muted-foreground mb-1">Location</p>
-            <p className="font-medium">Hyderabad, India</p>
+            <p className="font-medium">coimbatore, India</p>
           </div>
         </div>
       </div>

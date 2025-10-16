@@ -12,29 +12,29 @@ const Projects = () => {
       category: "App Development",
       description: "A modern task management application with intuitive UI and smooth animations.",
       image: todoApp,
-      github: "https://github.com/yourusername/todo-app",
+      github: "https://github.com/Suryasr69/todo",
     },
     {
       title: "Stopwatch",
       category: "Web Development",
       description: "Digital stopwatch with precise timing and clean interface design.",
       image: stopwatchApp,
-      github: "https://github.com/yourusername/stopwatch",
+      github: "https://github.com/Suryasr69/stopwatch",
     },
     {
       title: "Calculator",
       category: "App Development",
       description: "Professional calculator application with modern design and smooth interactions.",
       image: calculatorApp,
-      github: "https://github.com/yourusername/calculator",
+      github: "https://github.com/Suryasr69/calculator",
     },
-    {
-      title: "IPL Clone",
-      category: "Web Development",
-      description: "Complete IPL cricket tournament website clone with match schedules and live scores.",
-      image: iplClone,
-      github: "https://github.com/yourusername/ipl-clone",
-    },
+    // {
+    //   title: "IPL Clone",
+    //   category: "Web Development",
+    //   description: "Complete IPL cricket tournament website clone with match schedules and live scores.",
+    //   image: iplClone,
+    //   github: "https://github.com/yourusername/ipl-clone",
+    // },
   ];
 
   const categories = ["All", "App Development", "Web Development", "Design", "Mentorship"];

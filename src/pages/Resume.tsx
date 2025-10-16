@@ -5,28 +5,28 @@ import { toast } from "sonner";
 const Resume = () => {
   const education = [
     {
-      year: "2020-2021",
-      degree: "Software Development",
-      institution: "Tech University",
+      year: "2022-2024",
+      degree: "Master of Computer science",
+      institution: "Bharathiyar university",
     },
     {
-      year: "2016-2020",
-      degree: "Bachelor of Technology",
-      institution: "Engineering College",
+      year: "2019-2022",
+      degree: "Bachelor of Computer Science",
+      institution: " Alagappa University",
     },
   ];
 
-  const experience = [
+  const Internship = [
     {
-      year: "2022 - Present",
-      position: "Full Stack Developer",
-      company: "Tech Solutions Inc",
+      year: "2025 - Present",
+      position: "Mern Full Stack Developer",
+      company: "Pumo technovation",
     },
-    {
-      year: "2021-2022",
-      position: "Frontend Developer",
-      company: "Digital Agency",
-    },
+    // {
+    //   year: "2021-2022",
+    //   position: "Frontend Developer",
+    //   company: "Digital Agency",
+    // },
   ];
 
   const workSkills = [
@@ -53,8 +53,8 @@ const Resume = () => {
   const handleDownloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You'll need to add your resume PDF to the public folder
-    link.download = 'Surya_Prakash_Resume.pdf';
+    link.href = 'suryaresume.pdf'; // You'll need to add your resume PDF to the public folder
+    link.download = 'suryaresume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -108,10 +108,10 @@ const Resume = () => {
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-orange-600/10 flex items-center justify-center">
               <Briefcase className="w-6 h-6 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold">Experience</h2>
+            <h2 className="text-3xl font-bold">Internship</h2>
           </div>
           <div className="space-y-4">
-            {experience.map((item, index) => (
+            {Internship.map((item, index) => (
               <div
                 key={index}
                 className="bg-gradient-to-br from-orange-50 to-orange-100/50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"

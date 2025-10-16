@@ -31,7 +31,7 @@ const Home = () => {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: "suryaprakash@gmail.com",
+          to_email: "srsurya778@gmail.com",
         },
         "ExDZ26e6XGaNM_Unw" // Public key
       );
@@ -135,7 +135,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Phone</h3>
-                  <p className="text-muted-foreground">+91 9876543210</p>
+                  <p className="text-muted-foreground">+91 6385808234</p>
                 </div>
               </div>
             </div>
@@ -147,7 +147,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Email</h3>
-                  <p className="text-muted-foreground">suryaprakash@gmail.com</p>
+                  <p className="text-muted-foreground">srsurya778@gmail.com</p>
                 </div>
               </div>
             </div>
