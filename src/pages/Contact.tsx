@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
           </div>
           <p className="text-lg">+91 6385808234</p>
-          <p className="text-lg">+91 6385808234</p>
+          
         </div>
 
         <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 p-8 rounded-2xl">

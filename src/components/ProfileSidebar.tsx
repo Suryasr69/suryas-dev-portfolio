@@ -17,7 +17,7 @@ const ProfileSidebar = () => {
       <div className="flex justify-center mb-6">
         <div className="w-48 h-48 rounded-3xl overflow-hidden bg-gradient-to-br from-primary to-orange-600 p-1">
           <img
-            src={profileImage}
+            src="https://i.postimg.cc/pLNp1Qx1/web.png"
             alt="Surya Prakash"
             className="w-full h-full object-cover rounded-3xl"
           />

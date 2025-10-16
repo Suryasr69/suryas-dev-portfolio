@@ -37,7 +37,7 @@ const Projects = () => {
     // },
   ];
 
-  const categories = ["All", "App Development", "Web Development", "Design", "Mentorship"];
+  const categories = [""];
 
   return (
     <div className="animate-fade-in">
