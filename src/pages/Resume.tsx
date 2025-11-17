@@ -53,8 +53,8 @@ const Resume = () => {
   const handleDownloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = ' suryaprofessional.pdf'; // You'll need to add your resume PDF to the public folder
-    link.download = ' suryaprofessional.pdf';
+    link.href = ' src\assets\suryaprofessional.pdf'; // You'll need to add your resume PDF to the public folder
+    link.download = ' src\assets\suryaprofessional.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
