@@ -4,6 +4,7 @@ import todoApp from "@/assets/todo-app.jpg";
 import stopwatchApp from "@/assets/stopwatch-app.jpg";
 import calculatorApp from "@/assets/calculator-app.jpg";
 import iplClone from "@/assets/ipl-clone.jpg";
+import web from "@/assets/web.jpg";
 
 const Projects = () => {
   const projects = [
@@ -32,7 +33,7 @@ const Projects = () => {
       title: "E COMMERCE WEBSITE",
       category: "WEB Development",
       description: "A fully functional e-commerce website with product browsing, cart system, and secure checkout.",
-      image: calculatorApp,
+      image: src/assets/web.jpg
       github: "https://github.com/Suryasr69/WEBSITE",
     },
     // {
