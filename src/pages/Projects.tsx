@@ -28,6 +28,13 @@ const Projects = () => {
       image: calculatorApp,
       github: "https://github.com/Suryasr69/calculator",
     },
+     {
+      title: "E COMMERCE WEBSITE",
+      category: "WEB Development",
+      description: "A fully functional e-commerce website with product browsing, cart system, and secure checkout.",
+      image: calculatorApp,
+      github: "https://github.com/Suryasr69/WEBSITE",
+    },
     // {
     //   title: "IPL Clone",
     //   category: "Web Development",
