@@ -29,13 +29,13 @@ const Projects = () => {
       image: calculatorApp,
       github: "https://github.com/Suryasr69/calculator",
     },
-     {
-      title: "E COMMERCE WEBSITE",
-      category: "WEB Development",
-      description: "A fully functional e-commerce website with product browsing, cart system, and secure checkout.",
-      image: cal,
-      github: "https://github.com/Suryasr69/WEBSITE",
-    },
+    //  {
+    //   title: "E COMMERCE WEBSITE",
+    //   category: "WEB Development",
+    //   description: "A fully functional e-commerce website with product browsing, cart system, and secure checkout.",
+    //   image: cal,
+    //   github: "https://github.com/Suryasr69/WEBSITE",
+    
     // {
     //   title: "IPL Clone",
     //   category: "Web Development",
@@ -43,7 +43,7 @@ const Projects = () => {
     //   image: iplClone,
     //   github: "https://github.com/yourusername/ipl-clone",
     // },
-  ];
+  
 
   const categories = [""];
 
