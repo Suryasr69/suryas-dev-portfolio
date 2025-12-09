@@ -8,6 +8,15 @@ import iplClone from "@/assets/ipl-clone.jpg";
 
 const Projects = () => {
   const projects = [
+
+    {
+      title: " E COMMERCE WEBSITE",
+      category: "Web Development",
+      description: "A fully functional e-commerce website with product browsing, cart system, and secure checkout.",
+      image: iplClone,
+      github: "https://github.com/yourusername/ipl-clone",
+    },
+    
     {
       title: "Todo List App",
       category: "App Development",
@@ -31,13 +40,7 @@ const Projects = () => {
     },
   
     
-    {
-      title: " E COMMERCE WEBSITE",
-      category: "Web Development",
-      description: "A fully functional e-commerce website with product browsing, cart system, and secure checkout.",
-      image: iplClone,
-      github: "https://github.com/yourusername/ipl-clone",
-    },
+    
   ]
 
   const categories = [""];
