@@ -6,8 +6,8 @@ const ProfileSidebar = () => {
   const handleDownloadCV = () => {
     // In a real app, this would download the actual CV
     const link = document.createElement('a');
-    link.href = " /SuryaPrakash CV.pdf";
-    link.download = " /SuryaPrakash CV.pdf";
+    link.href = " /suryaprakash_cv.pdf";
+    link.download = " /suryaprakash_cv.pdf";
     link.click();
   };
 
